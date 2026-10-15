@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+  --color-steel-950: #121417;
+  --color-steel-900: #1b1e23;
+  --color-steel-800: #262a31;
+  --color-steel-700: #353a43;
+  --color-hazard: #f5b301;
+  --color-hazard-dark: #d99a00;
+  --font-display: var(--font-oswald), Impact, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+body { @apply bg-steel-950 text-zinc-100 font-sans; }
+h1,h2,h3 { @apply font-display uppercase tracking-tight; }
+.stripes { background: repeating-linear-gradient(-45deg,#f5b301 0 16px,#121417 16px 32px); }
+@utility btn { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded px-5 py-3 font-display text-lg uppercase tracking-wide transition; }
+@utility btn-hazard { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded px-5 py-3 font-display text-lg uppercase tracking-wide transition bg-hazard text-steel-950 hover:bg-hazard-dark; }
+@utility btn-ghost { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded px-5 py-3 font-display text-lg uppercase tracking-wide transition border-2 border-zinc-400 text-white hover:border-hazard hover:text-hazard; }
+
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 5rem; }

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Leroy's Backhoe & Plant Hire | Earthmoving Heathcote & Bendigo",
+  title: "Leroy's Backhoe & Plant Hire | Earthmoving Heathcote VIC",
   keywords: ["earthmoving Heathcote", "Bendigo earthmoving", "backhoe hire Heathcote", "plant hire Bendigo", "excavation Heathcote VIC", "septic systems Heathcote", "driveways Bendigo", "land clearing Heathcote"],
   description: "Family owned earthmoving and plant hire in Heathcote VIC since 1988. Foundations, driveways, septic, land clearing, house & shed sites, tank sites and trenching across Heathcote and the Bendigo region.",
   openGraph: { type: "website", locale: "en_AU", siteName: site.name, images: ["/images/shed-site-concrete-slab.png"] },

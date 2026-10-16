@@ -36,11 +36,14 @@ export default function Home() {
       </section>
 
       <section id="services" className="bg-steel-900 py-16">
-        <div className="mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-6xl px-4 text-center">
           <h2 className="text-4xl">What we do</h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             {services.map(s => (
-              <div key={s.title} className="border-l-4 border-hazard bg-steel-800 p-5"><h3 className="text-xl">{s.title}</h3><p className="mt-2 text-sm text-zinc-400">{s.body}</p></div>
+              <div key={s.title} className="w-full border-t-4 border-hazard bg-steel-800 p-5 text-center sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)]">
+                <h3 className="text-xl">{s.title}</h3>
+                <p className="mt-2 text-sm text-zinc-400">{s.body}</p>
+              </div>
             ))}
           </div>
         </div>

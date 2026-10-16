@@ -10,7 +10,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-steel-950 via-steel-950/60 to-transparent" />
         <div className="relative mx-auto max-w-6xl px-4 py-20 md:py-32">
           <p className="inline-block bg-hazard px-3 py-1 font-display uppercase tracking-widest text-steel-950">Heathcote VIC · Since 1988</p>
-          <h1 className="mt-4 max-w-3xl text-5xl leading-[0.95] md:text-7xl">Earthmoving &amp; plant hire <span className="text-5xl">for Heathcote &amp; surrounds</span></h1>
+          <h1 className="mt-4 max-w-3xl text-5xl leading-[0.95] md:text-7xl">Earthmoving &amp; plant hire 
+            <br /> 
+            <span className="text-3xl md:5xl">for Heathcote &amp; surrounds</span>
+          </h1>
           <p className="mt-5 max-w-xl text-xl text-zinc-200">Proudly family owned and operated since 1988</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href={`tel:${site.phones[0].tel}`} className="btn-hazard">Call Leroy {site.phones[0].display}</a>
